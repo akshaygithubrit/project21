@@ -1,16 +1,16 @@
 *{
     margin: 0;
-    padding:0;
+    padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     border: none;
-    outline: none;
+    outline: 0;
     scroll-behavior: smooth;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins',sans-serif;
 }
-:root {
-    --background-color: black;
-    --second-background-color:black;
+:root{
+    --bg-color:black;
+    --second-bg-color:black;
     --text-color:white;
     --main-color:skyblue;
 
@@ -20,16 +20,16 @@ html{
     overflow-x: hidden;
 }
 body{
-    background:var(--bg-color) ;
-    color:var(--ṭext-color);
-} 
+    background:var(--bg-color);
+    color: var(--text-color);
+}
 .header{
     position: fixed;
-    top:0px;
-    left:0px;
-    width: 100%;
+    top: 0;
+    left: 0;
+    width:100% ;
     padding: 2rem 9%;
-    background: blueviolet;
+    background: orange;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -39,4 +39,15 @@ body{
     font-size: 2.5rem;
     color: var(--text-color);
     font-weight: 600;
+}
+.navbar a {
+    font-size: 1.7rem;
+    color: var(--text-color);
+    font-weight: 500;
+    margin-left: 3.5rem;
+    transition: .3s;
+  
+}
+.navbar a:hover{
+    color: var(--main-color);
 }
