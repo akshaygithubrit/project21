@@ -78,3 +78,7 @@ section{
     color: transparent;
     -webkit-text-stroke: .7px var(--main-color);
 }
+.home-content p {
+    font-size: 1.6rem;
+    margin: 2rem 0 4 rem;
+}
