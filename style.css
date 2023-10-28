@@ -56,9 +56,16 @@ section{
     padding: 10rem 9% 2rem;
 }
 .home{
-    display: flex;
+    position: relative;
+    width:100%;
+    justify-content:space-between;
+    height: 100vh;
+    background: url(C:\Users\aksha\Downloads\WhatsAppImage2023-10-20at19.17.01_04831491.jpg) no-repeat;
+    background-size:cover;
+    background-position: center;
+    display:flex;
     align-items: center;
-    padding: 0 9%;
+    padding:70px 10% 0;
 }
 .home-content {
     max-width: 60rem;
