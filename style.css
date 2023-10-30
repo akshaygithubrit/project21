@@ -60,7 +60,7 @@ section{
     width:100%;
     justify-content:space-between;
     height: 100vh;
-    background: url(C:\Users\aksha\Downloads\WhatsAppImage2023-10-20at19.17.01_04831491.jpg) no-repeat;
+    background: url(profile.jpg) ;
     background-size:cover;
     background-position: center;
     display:flex;
@@ -97,7 +97,6 @@ section{
     justify-content: space-between;
 }
 .home-sci a{
-    position: relative;
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -105,7 +104,7 @@ section{
     height: 40px;
     background: transparent;
     border: .2rem solid var(--main-color);
-    border-radius: 50%;
+    border-radius: 20%;
     font-size: 20px;
     color: var(--main-color);
 }
