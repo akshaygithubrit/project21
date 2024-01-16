@@ -33,33 +33,40 @@ window.onscroll = () => {
         const aboutSection = document.getElementById('about');
         aboutSection.scrollIntoView({ behavior: 'smooth' });
     }
-    function submitForm() {
-        const form = document.getElementById("contactForm");
-        const formData = new FormData(form);
+   
+    let slideIndex = 1;
+    showSlides(slideIndex);
     
-        fetch("https://jsonplaceholder.typicode.com/posts", {
-            method: "POST",
-            body: JSON.stringify(Object.fromEntries(formData)),
-            headers: {
-                "Content-type": "application/json; charset=UTF-8",
-            },
-        })
-            .then((response) => response.json())
-            .then((data) => {
-                
-                document.getElementById("submitMessage").innerHTML =
-                    "Form submitted successfully!";
-                document.getElementById("submitMessage").style.color = "green";
-                form.reset();
-            })
-            .catch((error) => {
-                console.error("Error:", error);
-                
-                document.getElementById("submitMessage").innerHTML =
-                    "Error submitting the form. Please try again.";
-                document.getElementById("submitMessage").style.color = "red";
-            });
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
     }
     
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+    }     
+       
+    
+       
+       
+                
+              
 
-
+    

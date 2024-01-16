@@ -6,6 +6,7 @@
     <title>Akshay K M | CSE CEC'25</title>
     <link rel="stylesheet" href="style.css" />
      <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <body>
     <header class="header">
@@ -21,6 +22,8 @@
             <span class="active-nav"></span>
         </nav>
     </header>
+
+
    
 <section class ="home" id="home">
 <div class="home-content">
@@ -68,22 +71,24 @@
     </div>
     </div>
     </section>
-    <section class="projects" id="projects">
-        <h2 class="heading">My <span>Projects</span></h2>
+    <section class="project" id="projects">
+    <h2 class="heading">My <span>Projects</span></h2>
+    <div class="slideshow-container">
 
-        <div class="project-item">
-            <img src="images/Project1.png" alt="Project1">
-            <h3>Project 1</h3>
-            <p>I have made portfolio using react.</p>
-            <a href="https://akshay-km-portfolio-7bb26.web.app">Go To Link</a>
-        </div>
-
-        <div class="project-item">
-            <img src="images/Project1.png" alt="Project1">
-            <h3>Project 2</h3>
-            <p>I have made portfolio using react.</p>
-            <a href="https://akshay-km-portfolio-7bb26.web.app">Go To Link</a>
-        </div>
+    
+        <div class="mySlides fade">
+          <div class="text">Project 1</div>
+          <img src="images/Project1.png" style="width:100%">
+          </div>
+        
+         <div class="mySlides fade">
+          <div class="text">Project 2</div>
+          <img src="images/Project1.png" style="width:100%">
+          </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+        
      </section>
      <section class="skills"  id="skills">
         <h2 class="heading">My <span>Skills</span></h2>
@@ -130,7 +135,7 @@
 
 <section class="contact" id ="contact">
     <h2 class="heading">Contact <span>Me</span></h2>
-    <form id="contactForm">
+    <form  action="https://formspree.io/f/mgejgnyg"  method="POST">
         <div class="input-box">
             <div class="input-field">
                 <input type="text" placeholder="Full Name" required>
