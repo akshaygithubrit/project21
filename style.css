@@ -346,6 +346,29 @@ span{
     width: 70%; 
 
   }
+  .website-button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn1 {
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: var(--main-color);
+    color: blueviolet;
+    border: none;
+    border-radius: 5px;
+}
+
+
+
+.btn1:hover {
+    background-color: var(--main-color); 
+}
   
   
   .prev, .next {
